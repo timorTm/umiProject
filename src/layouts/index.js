@@ -1,10 +1,9 @@
 import styles from './index.css';
-
+import CommonLayout from '../components/layouts/CommonLayout'
 function BasicLayout(props) {
   return (
     <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to umi!</h1>
-      {props.children}
+      <CommonLayout children={props.children} props={props}/>      
     </div>
   );
 }
